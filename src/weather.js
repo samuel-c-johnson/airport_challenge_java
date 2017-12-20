@@ -9,9 +9,13 @@ function sample(array) {
 }
 
 Weather.prototype.randomWeather = function() {
-  sample(this.currentWeather)
+  return sample(this.currentWeather)
 };
 
 Weather.prototype.isStormy = function() {
+  return this.randomWeather() === "Stormy"
+};
+
+
 
 Math.random <= 0.2
